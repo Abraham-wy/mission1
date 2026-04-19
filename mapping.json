@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "html": { "type": "text" },
+      "text": { "type": "text" },
+      "embedding": {
+        "type": "dense_vector",
+        "dims": 768,
+        "index": true,
+        "similarity": "cosine"
+      }
+    }
+  }
+}
